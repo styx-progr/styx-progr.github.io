@@ -58,7 +58,7 @@
   }
   
   div.card {
-      background-color: hsla(160, 80%, 80%, 0.6);
+      background-color: hsla(160, 18%, 55%, 0.56);
       /* background-color: rgb(202, 202, 202); */
       border-style: groove;
       border-color: rgb(169, 167, 167);
@@ -69,6 +69,11 @@
   
   p.indent {
     text-indent: 20px;
+  }
+
+  p.info_text {
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 12;
   }
   
   div.image {
