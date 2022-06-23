@@ -58,14 +58,14 @@ div.column_left {
 }
 
 div.card {
-    background-color: hsla(160, 80%, 80%, 0.6);
-    /* background-color: rgb(202, 202, 202); */
-    border-style: groove;
-    border-color: rgb(169, 167, 167);
-    padding: 20px;
-    margin-top: 20px;
-    opacity: 1.0;
-  }
+  background-color: hsla(170, 19%, 67%, 0.888);
+  /* background-color: rgb(202, 202, 202); */
+  border-style: groove;
+  border-color: rgb(169, 167, 167);
+  padding: 20px;
+  margin-top: 20px;
+  opacity: 1.0;
+}
 
 p.indent {
   text-indent: 20px;
