@@ -8,19 +8,23 @@
 <script src="scripts.js"></script>
 </head>
 
-<body onload="draw();">
-    <div class="topnav">
-        <a href="index.html">Home</a>
-        <a href="about_me.html">About me</a>
-        <a class="active" href="pixelart.html">PixelArt</a>
-        <a href="family_tree.html">Family Tree</a>
-      </div>
+<!-- <body onload="draw();"> -->
+<body>
+  <div class="topnav">
+      <a href="index.html">Home</a>
+      <a href="about_me.html">About me</a>
+      <a class="active" href="pixelart.html">PixelArt</a>
+      <a href="family_tree.html">Family Tree</a>
+    </div>
 
-      <canvas id="canvas" width="150" height="150"></canvas>
-      <script>
-          let canvas = document.getElementById("canvas");
-          btn.addEventListener('click', drawSquare(canvas));
-      </script>
+  <canvas id="canvas" width="150" height="150"></canvas>
+  <script>
+      var canvas = document.getElementById("canvas");
+      var ctx = canvas.getContext("2d");
+      ctx.addEventListener("click", drawSquare())
+      
+      // btn.addEventListener('click', drawSquare(canvas));
+  </script>
       
 </body>
 

@@ -34,11 +34,8 @@ function  getMousePos(canvas, evt) {
     }
   }
 
-  function drawSquare(canvas) {
-    var ctx = canvas.getContext("2d");
-    x, y = getMousePos(canvas);
-    ctx.beginPath();
-    ctx.rect(x-5, y-5, x+5, y+5);
-    ctx.stroke();
+  function drawSquare() {
+    ctx.fillStyle = "#FF0000";
+    ctx.fillRect(0, 0, 150, 75);
   }
 
