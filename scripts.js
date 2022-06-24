@@ -34,13 +34,11 @@ function  getMousePos(canvas, evt) {
     }
   }
 
-  function drawSquare(canvas, evt) {
-    x, y = getMousePos(canvas, evt);
+  function drawSquare(canvas) {
+    x, y = getMousePos(canvas);
     ctx.fillStyle = 'rgb(200, 0, 0)';
-    ctx.fillRect(x, y, x+10, y+10);
+    ctx.fillRect(x-5, y-5, x+5, y+5);
   }
 
-  let btn = document.getElementById("canvas");
-  btn.addEventListener('click', event => {
-    drawSquare(canvas, event);
-  });
+  let canvas = document.getElementById("canvas");
+  btn.addEventListener('click', drawSquare(canvas));
