@@ -35,10 +35,10 @@ function  getMousePos(canvas, evt) {
   }
 
   function drawSquare(canvas) {
+    var ctx = canvas.getContext("2d");
     x, y = getMousePos(canvas);
-    ctx.fillStyle = 'rgb(200, 0, 0)';
-    ctx.fillRect(x-5, y-5, x+5, y+5);
+    ctx.beginPath();
+    ctx.rect(x-5, y-5, x+5, y+5);
+    ctx.stroke();
   }
 
-  let canvas = document.getElementById("canvas");
-  btn.addEventListener('click', drawSquare(canvas));
