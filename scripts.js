@@ -3,8 +3,8 @@ function draw() {
     const canvas = document.getElementById("canvas");
 
     const resize = () => {
-        canvas.width = window.innerWidth;
-        canvas.height = window.innerHeight;
+        canvas.width = window.outerWidth;
+        canvas.height = window.outerHeight;
     }
 
     resize()
