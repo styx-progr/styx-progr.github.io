@@ -25,8 +25,8 @@ function draw() {
 
 function  getMousePos(canvas, evt) {
     var rect = canvas.getBoundingClientRect(), // abs. size of element
-      scaleX = canvas.width / rect.width,    // relationship bitmap vs. element for x
-      scaleY = canvas.height / rect.height;  // relationship bitmap vs. element for y
+    scaleX = canvas.width / rect.width,    // relationship bitmap vs. element for x
+    scaleY = canvas.height / rect.height;  // relationship bitmap vs. element for y
   
     return {
       x: (evt.clientX - rect.left) * scaleX,   // scale mouse coordinates after they have
@@ -35,7 +35,14 @@ function  getMousePos(canvas, evt) {
   }
 
   function drawSquare() {
+    var rect = canvas.getBoundingClientRect(); // abs. size of element
+    scaleX = canvas.width / rect.width;    // relationship bitmap vs. element for x
+    scaleY = canvas.height / rect.height;  // relationship bitmap vs. element for y
+  
+    x: (evt.clientX - rect.left) * scaleX;   // scale mouse coordinates after they have
+    y: (evt.clientY - rect.top) * scaleY;     // been adjusted to be relative to element
+    
     ctx.fillStyle = "#FF0000";
-    ctx.fillRect(0, 0, 150, 75);
+    ctx.fillRect(x-5, y-5, x+5, y+5);
   }
 
