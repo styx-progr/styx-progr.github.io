@@ -11,14 +11,19 @@
 <!-- <body onload="draw();"> -->
 <body>
   <div class="topnav">
-      <a href="index.html">Home</a>
-      <a href="about_me.html">About me</a>
-      <a class="active" href="pixelart.html">PixelArt</a>
-      <a href="family_tree.html">Family Tree</a>
-    </div>
+    <a href="index.html">Home</a>
+    <a href="about_me.html">About me</a>
+    <a class="active" href="pixelart.html">PixelArt</a>
+    <a href="family_tree.html">Family Tree</a>
+  </div>
 
-  <canvas id="pixelart" width=window.innerWidth height=window.innerHeight></canvas>
-  <!-- <script>drawTestSquares()</script> -->
+  <canvas id="pixelart" width="1800" height="900"></canvas>
+  <script>loadCanvas()</script>
+  <script>
+    var canvas = document.getElementById("pixelart");
+    canvas.addEventListener('click', function(e) {drawSquare(canvas, e)})
+    </script>
+
       
 </body>
 
