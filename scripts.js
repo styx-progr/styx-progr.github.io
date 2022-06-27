@@ -1,6 +1,6 @@
 var canvas = document.getElementById("pixelart");
 if(canvas){
-  canvas.addEventListener('click', getMousePos(canvas), false);
+  canvas.addEventListener('click', drawTestSquares(), false);
 }
 
 function drawTestSquares() {
