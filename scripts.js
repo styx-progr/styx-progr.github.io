@@ -1,6 +1,6 @@
 
 function draw() {
-    const canvas = document.getElementById("canvas");
+    const canvas = document.getElementById("pixelart");
 
     const resize = () => {
         canvas.width = window.outerWidth;

@@ -17,13 +17,15 @@
       <a href="family_tree.html">Family Tree</a>
     </div>
 
-  <canvas id="canvas" width="150" height="150"></canvas>
+  <canvas id="pixelart" width="150" height="150"></canvas>
   <script>
-      var canvas = document.getElementById("canvas");
-      var ctx = canvas.getContext("2d");
-      ctx.addEventListener("click", drawSquare())
-      
-      // btn.addEventListener('click', drawSquare(canvas));
+    var c = document.getElementById("pixelart");
+    var ctx = c.getContext("2d");
+    ctx.fillStyle = "#FF0000";
+    ctx.fillRect(0, 0, 10, 10);
+
+    ctx.fillStyle = "#04B45F";
+    ctx.fillRect(0, 0, 10, 10);
   </script>
       
 </body>
