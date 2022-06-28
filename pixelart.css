@@ -4,10 +4,10 @@
   
   body {
     margin: 0;
-    background-image: url(ducks.png);
+    /* background-image: url(ducks.png);
     background-repeat: no-repeat;
     background-attachment: fixed;
-    background-size: cover;
+    background-size: cover; */
   }
 
   /* Style the header */
@@ -41,4 +41,23 @@
   
   .active {
     background-color: #04AA6D;
+  }
+
+  div.pixelart {
+    background-color: #333;
+    width: 70%;
+    height: 100%;
+    margin: 0px;
+    float: right;
+    padding: 5px;
+    position: relative;
+  }
+  
+  div.colourbar {
+    background-color: rgb(137, 147, 149);
+    color: #ddd;
+    float: left;
+    padding: 0px;
+    width: 30%;
+    margin: 0px;
   }
