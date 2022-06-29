@@ -48,6 +48,10 @@
     margin: 20px;
     float: left;
     padding: 10px;
+    opacity: 1.0;
+    background-color: hsla(170, 19%, 67%, 0.888);
+    border-style: groove;
+    border-color: rgb(169, 167, 167);
   }
   
   div.column_left {
@@ -58,14 +62,15 @@
   }
   
   div.card {
-      background-color: hsla(170, 19%, 67%, 0.888);
-      /* background-color: rgb(202, 202, 202); */
-      border-style: groove;
-      border-color: rgb(169, 167, 167);
-      padding: 20px;
-      margin-top: 20px;
-      opacity: 1.0;
-    }
+    float: left;
+    background-color: hsla(170, 19%, 67%, 0.888);
+    border-style: groove;
+    border-color: rgb(169, 167, 167);
+    padding: 20px;
+    margin: 20px;
+    opacity: 1.0;
+    width: 20%;
+  }
   
   p.indent {
     text-indent: 20px;
@@ -83,8 +88,8 @@
   }
   
   /* Responsive layout - makes the three columns stack on top of each other instead of next to each other */
-  @media screen and (max-width: 600px) {
-    .column_left, .main_body {
+  @media screen and (max-width: 1200px) {
+    .column_left, .main_body, .card{
       width: 100%;
     }
   }
